@@ -1,0 +1,5 @@
+flask==2.2.2
+diffusers==0.2.4
+transformers
+ftfy
+scipy
