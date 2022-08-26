@@ -54,7 +54,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Stable Diffusers Colab Server</h1>
+      <h1>Stable Diffusion Colab Server</h1>
       <form onSubmit={handleSubmit}>
         <input type="text" ref={inputRef} disabled={loading} />
       </form>
