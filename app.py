@@ -18,15 +18,15 @@ pipe = StableDiffusionPipeline.from_pretrained(
 ).to("cuda")
 logging.info("Stable diffusion pipeline loaded")
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path="/assets", static_folder="./dist/assets")
 
 @app.route("/")
 def index():
-	return "Hello World!"
+	return send_file("./dist/index.html", mimetype="text/html")
 
 @app.route("/generate", methods=["POST"])
 def generate():
-	prompt = request.form["prompt"]
+	prompt = request.json["prompt"]
 	with autocast("cuda"):
 		image = pipe(prompt)["sample"][0]
 		buf = io.BytesIO()

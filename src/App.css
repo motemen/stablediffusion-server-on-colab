@@ -1,6 +1,21 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 1rem;
+}
+
+input {
+  padding: 10px;
+  width: 90%;
+}
+
+div#results {
+  display: grid;
+  margin-top: 30px;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+div#results .item img {
+  max-width: 300px;
 }
