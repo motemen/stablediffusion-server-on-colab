@@ -2,7 +2,7 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/motemen/stablediffusion-server-on-colab/blob/main/Stable_Diffusion_Server_on_Colab.ipynb)
 
-![Screencast](./doc/screencast-server.gif)
+![Screencast](./doc/screencast.gif)
 
 ## How To Use
 
